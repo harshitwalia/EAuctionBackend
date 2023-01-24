@@ -9,7 +9,7 @@ import (
 
 func main() {
 
-	dbURL := flag.String("mongodb-url", "mongodb://localhost:27017", "URL to connet to mongodb database")
+	dbURL := flag.String("mongodb-url", "mongodb+srv://harshit:test123@cluster0.tqfro4n.mongodb.net/testing", "URL to connet to mongodb database")
 	dbName := flag.String("database", "testing", "Database name in mongodb")
 	flag.Parse()
 	router := server.CreateRouter()
