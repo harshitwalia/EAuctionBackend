@@ -24,10 +24,13 @@
 
       </div>
       <blockquote>
-        <h5 class="text-darken-4">Created By: {{ .auction.CreatedBy }}</h5>
+        <h5 class="text-darken-4">Sale of Property By: {{ .auction.CreatedBy }}</h5>
       </blockquote>
       <blockquote>
-        <h5 class="text-darken-4">Base Price: {{ .auction.BasePrice }}</h5>
+        <h5 class="text-darken-4">Reserve Price: {{ .auction.BasePrice }}</h5>
+      </blockquote>
+      <blockquote>
+        <h5 class="text-darken-4"><a href=" {{ .auction.Description }}">Views More</a></h5>
       </blockquote>
     </div>
   </div>
