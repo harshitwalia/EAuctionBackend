@@ -5,11 +5,11 @@
     <div class="card-content">
       <p>{{ .Title }}</p>
       <br/>
-      <p>{{ .Description }}</p>
+      <p><a href=" {{ .auction.Description }}">Views More</a></p>
     </div>
     <div class="card-action">
       <a class="waves-effect waves-light btn" href="/auctions/{{ formatAuctionIDAsHexString .AuctionID }}">Open</a>
-      <p class="right" style="color: #e3696e; margin-top: 6px;">Base Price: ${{.BasePrice}}</p>
+      <p class="right" style="color: #e3696e; margin-top: 6px;">Reserve Price: Rs.{{.BasePrice}}</p>
     </div>
   </div>
 </div>
